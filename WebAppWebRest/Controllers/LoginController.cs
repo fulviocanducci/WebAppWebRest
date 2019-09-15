@@ -68,7 +68,7 @@ namespace WebAppWebRest.Controllers
                 DateTime Expires = NotBefore.AddSeconds(tokenConfigurations.Seconds);
 
                 var handler = new JwtSecurityTokenHandler();
-
+                 
                 var securityToken = handler.CreateToken(new SecurityTokenDescriptor
                 {
                     Issuer = tokenConfigurations.Issuer,
